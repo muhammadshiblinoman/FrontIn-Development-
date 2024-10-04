@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--(onload, onresize) sudhu matro body te babohar kora hy -->
+<body onscroll="onScroll()">
+    <h1 id="title"> JavaScript is Fun</h1>
+    <button id="btn">Subscribe</button>
+    <h2 id="text"> </h2>
+    <!-- Right button click korle subscribe hbe -->
+    <!-- <button oncontextmenu="subscribe()" id="btn">Subscribe</button> -->
+
+    <form action="" id="form" onkeypress="keyPress()">
+        <label for=""> Name </label>
+        <input type="text" placeholder="Enter Your Name">
+        <label for=""> Email </label>
+        <input type="email" placeholder="Enter Your Email">
+        <label for=""> Massage </label>
+        <textarea id="textarea" placeholder="Enter Your Massage"></textarea>
+        <input type="submit" value="Send Massage">
+    </form>
+
+    <ul id="ul">
+        <li id="li">Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <script src="events.js"></script>
+</body>
+</html>

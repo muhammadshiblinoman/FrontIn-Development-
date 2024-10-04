@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            max-width: 250px;
+            background-color: antiquewhite;
+            height: 250px;
+            text-align: center;
+            box-shadow: 5px 5px 15px #000280;
+            border-radius: 5px;
+            margin: 50px auto;
+            font-weight: bold;
+        }
+        #input{
+            margin-bottom: 10px;
+        }
+        #CtoF{
+            margin-bottom: 10px;
+        }
+        #FtoC{
+            margin-bottom: 10px;
+        }
+        #btn{
+            padding: 5px 10px;
+            border: 2px solid #222030;
+            border-radius: 5px;
+            background-color: #000280;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Temperature Convert:</h1>
+        <input type="number" value="0" id="inputValue"><br>
+
+        <input type="radio" name="fixed" id="CtoF">
+        <label for="CtoF"> Celceis To Farenhiet</label><br>
+
+        <input type="radio" name="fixed" id="FtoC">
+        <label for="FtoC"> Farenhiet To Celceis</label> <br>
+
+        <button id="btn">Submit</button>
+        <p id="Text"></p>
+    </form>
+
+    <script>
+        let CtoF = document.getElementById("CtoF");
+        let FtoC = document.getElementById("FtoC");
+        let Text = document.getElementById("Text");
+        let inputValue = document.getElementById("inputValue");
+        let Temp;
+
+        document.getElementById("btn").onclick = () => {
+            if(CtoF.checked) {
+                Temp = Number(inputValue.value);
+                Temp = Temp*9/5+32;
+                Text.textContent = Temp.toFixed(1);
+            } else if(FtoC.checked) {
+                Temp = Number(inputValue.value);
+                Temp = (Temp-32)*5/9;
+                Text.textContent = Temp.toFixed(1);
+            } else{
+                Text.textContent = "Select a Unit";
+            }
+        }
+    </script> 
+</body>
+</html>

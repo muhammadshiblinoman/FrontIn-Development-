@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: hsla(209, 100%, 90%, 0.144);
+            margin: 0;
+        }
+        #clock-conteiner{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+        #clock{
+            font-size: 5em;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            color: #224065;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock-conteiner">
+        <div id="clock">00:00:00</div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours().toString().padStart(2,0);
+            let meridiem = hours >= 12 ? "PM" : "AM";
+            hours = hours % 12 || 12;
+            let munits = now.getMinutes().toString().padStart(2,0);
+            let seconds = now.getSeconds().toString().padStart(2,0);
+            let timeString = `${hours}:${munits}:${seconds}:${meridiem}`;
+
+            document.getElementById("clock").textContent = timeString;
+        }
+
+        updateClock();
+        setInterval(updateClock,1000);
+    </script>
+</body>
+</html>

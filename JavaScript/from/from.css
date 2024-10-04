@@ -1,0 +1,27 @@
+body{
+    background-color: antiquewhite;
+    margin: 100px;
+}
+form{
+    padding-bottom: 30px;
+    width: 100%;
+    line-height: 10px;
+    display: block;
+
+}
+form input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+}
+form button{
+    background-color: red;
+    padding: 8px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+}
+form button:hover{
+    background-color: aqua;
+}

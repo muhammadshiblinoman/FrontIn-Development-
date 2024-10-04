@@ -1,0 +1,160 @@
+/* Header Part Start */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 1;
+}
+header div {
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    margin-left: 400px;
+    margin-top: 25px;
+}
+header .navbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 380px;
+    margin-top: 10px;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    float: left;
+    padding-right: 25px;
+}
+header .navbar ul li a {
+    text-decoration: none;
+    color: rgb(41,41,41);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+header .navbar ul li a:hover{
+    color: #7f97ff;
+}
+/* Header Part End */
+/* Section one part start */
+.section1{
+    background-color: #f9f9ff;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+.text, .pic1{
+    width: 40%;
+}
+.text{
+    margin-left: 450px;
+    margin-bottom: 120px;
+}
+.text h3 {
+    font-weight: normal;
+}
+.text h1 {
+    font-size: 60px;
+}
+.text p {
+    color: rgba(78,78,78,0.6);
+    width: 520px;
+}
+.text button{
+    padding: 8px 20px;
+    color:white;
+    background-color: #8393ff;
+    outline: none;
+    border: 1px solid #8393ff;
+    font-size: 15px;
+}
+.text button:hover{
+    box-shadow: 5px 10px 30px rgba(130,147,255,0.5);
+    transition: all 0.5s ease-in;
+    outline: none;
+}
+.pic1{
+    padding-right:300px;
+}
+.pic1 img{
+    max-width: 100%;
+    height: auto;
+}
+/* Section one part end */
+/* Section two part start */
+.section2{
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text2, .pic2{
+    width: 40%;
+}
+.pic2{
+    margin-left: 350px;
+}
+.text2{
+    margin-right: 100px;
+    padding-right: 50px;
+}
+.text2 h3{
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.7);
+}
+.text2 h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.text2 p{
+    color: rgba(78,78,78,0.6);
+    width: 500px;
+}
+.text2 button{
+    padding: 8px 20px;
+    color:white;
+    background-color: #8393ff;
+    outline: none;
+    border: 1px solid #8393ff;
+    font-size: 15px;
+}
+.text2 button:hover{
+    box-shadow: 5px 10px 30px rgba(130,147,255,0.5);
+    transition: all 0.5s ease-in;
+    outline: none;
+}
+.pic2 img{
+    max-width: 95%;
+    height: auto;
+}
+/* Section Two part end */
+/* Section three part start */
+.text3{
+    text-align: center;
+}
+.text3 h2{
+    font-size: 35px;
+}
+.text3 p{
+    text-align: center;
+    width: 650px;
+    margin-left: 580px;
+    color: rgba(0,0,0,0.5);
+}
+/* Section three part end */

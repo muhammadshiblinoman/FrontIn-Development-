@@ -1,0 +1,23 @@
+a {
+    color: red;
+    background-color: green;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 15px;
+    border: 5px solid black;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+a:active{
+    color: brown;
+    background-color: blueviolet;
+}
+
+a:visited{
+    color: tomato;
+    background-color: black;
+}

@@ -1,0 +1,13 @@
+html{
+    font-size: 22px;
+}
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+a: :visited{
+    color: lightgray;
+}
+a :hover a :active {
+    color: #eee;
+}

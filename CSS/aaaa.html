@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"> Subscribe </label> <br>
+
+    <input type="radio" id="visaBtn" name="radio">
+    <label for="visaBtn"> Visa </label> <br>
+
+    <input type="radio" id="masterCardBtn" name="radio">
+    <label for="masterCardBtn"> MasterCard </label> <br>
+
+    <input type="radio" id="paypalBtn" name="radio">
+    <label for="paypalBtn"> Paypal </label> <br>
+
+    <button id="btn"> Submit</button>
+    <p id="subscribeNow"></p>
+    <p id="paymentNow"></p>
+
+    <script>
+        let myCheckbox = document.getElementById("myCheckbox");
+        let visaBtn = document.getElementById("visaBtn");
+        let masterCardBtn = document.getElementById("masterCardBtn");
+        let paypalBtn = document.getElementById("paypalBtn");
+        let subscribeNow = document.getElementById("subscribeNow");
+        let paymentNow = document.getElementById("paymentNow");
+
+        document.getElementById("btn").onclick = ()=> {
+            if(myCheckbox.checked ) {
+                subscribeNow.textContent = "You are Subscribed";
+            } else {
+                subscribeNow.textContent = "You are Not Subscribed";
+            }
+
+            if(visaBtn.checked ) {
+                paymentNow.textContent = "You are Paying By Visa";
+            } else if(masterCardBtn.checked) {
+                paymentNow.textContent = "You are Paying By MasterCard";
+            } else if(paypalBtn.checked) {
+                paymentNow.textContent = "You are Paying By Paypal";
+            } else {
+                paymentNow.textContent = "You are not Paying";
+            }
+        }
+    </script>
+    
+</body>
+</html>

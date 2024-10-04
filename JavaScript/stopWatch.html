@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: monospace;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #display{
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        #startbtn{
+            padding: 8px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: antiquewhite;
+            color: brown;
+            border: none;
+        }
+        #startbtn:hover{
+            background-color: aqua;
+        }
+        #stopbtn{
+            padding: 8px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: antiquewhite;
+            color: brown;
+            border: none;
+        }
+        #stopbtn:hover{
+            background-color: aqua;
+        }
+        #resetbtn{
+            padding: 8px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: antiquewhite;
+            color: brown;
+            border: none;
+        }
+        #resetbtn:hover{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+
+    <div id="conteiner">
+        <div id="display"> 00:00:00:00 </div>
+        <div id="click">
+            <button id="startbtn" onclick="start()"> Start </button>
+            <button id="stopbtn" onclick="stop()"> Stop </button>
+            <button id="resetbtn" onclick="reset()"> Reset </button>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>

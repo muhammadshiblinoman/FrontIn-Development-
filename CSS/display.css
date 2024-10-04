@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    display: inline-block;
+}
+span{
+    text-align: center;
+    display: block;
+    font-size: x-large;
+}
+
+ul li {
+    display:inline;
+    padding-left: 20px;
+}

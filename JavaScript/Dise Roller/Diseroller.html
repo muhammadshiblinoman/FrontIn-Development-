@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container{
+            text-align: center;
+            font-weight: bold;
+        }
+        #btn{
+            padding: 8px 10px;
+            margin-top: 10px;
+            background-color: #223300;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        #btn:hover{
+            background-color: aqua;
+            color: #223300;
+            font-weight: bold;
+        }
+        input {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Dice Roller:</h1>
+        <label id="numOfDice"> Number of Dice</label>
+        <input type="number" value="1" min="1" max="6" id="diceNumber"><br>
+        <button id="btn">Dice Roller</button>
+        <div id="diceNumbers"></div>
+        <div id="diceImages"></div>
+    </div>
+
+
+    <script>
+        document.getElementById("btn").onclick= () => {
+            let numOfDice = document.getElementById("diceNumber").value;
+            let diceNumbers = document.getElementById("diceNumbers");
+            let diceImages = document.getElementById("diceImages");
+
+            let values = [];
+            let images = [];
+
+            for( let i = 0;i <numOfDice; i++ ) {
+                let value = Math.floor(Math.random()*6)+1;
+                values.push(value);
+                images.push(`<img src="${value}.png">`);
+            }
+
+            diceNumbers.textContent = `Dice: ${values.join(", ")}`;
+            diceImages.innerHTML = images.join(" ");
+            
+        }
+    </script>
+</body>
+</html>

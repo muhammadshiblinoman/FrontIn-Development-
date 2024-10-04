@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    border: 2px dashed red;
+    background-color: bisque;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+
+p{
+    font-size: 2rem;
+}

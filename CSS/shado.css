@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px ;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    border: 3px solid rgb(0,0,0, 0.5);
+    box-shadow: 3px 4px 5px rgb(234,00, 56, 1);
+}
+.box img{
+    width: 100%;
+}
+
+h3{
+    margin: 0;
+}

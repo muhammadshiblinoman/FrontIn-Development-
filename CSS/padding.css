@@ -1,0 +1,9 @@
+.noman{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    padding: 20px 30px 40px 50px;
+}
+p{
+    color: orange;
+}

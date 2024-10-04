@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn{
+            padding: 5px 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"> Subscribe</label> <br>
+
+    <input type="radio" name="card" id="visaBtn">
+    <label for="visaBtn">Visa</label> <br>
+
+    <input type="radio" name="card" id="masterCardBtn">
+    <label for="masterCardBtn">MasterCard</label> <br>
+    
+    <input type="radio" name="card" id="paypalBtn">
+    <label for="paypalBtn">Paypal</label> <br>
+
+    <button id="btn"> Submit </button>
+    <p id="mySubscribe"></p>
+    <p id="myPayment"></p>
+
+
+    <script src="checkbox.js"></script>
+</body>
+</html>

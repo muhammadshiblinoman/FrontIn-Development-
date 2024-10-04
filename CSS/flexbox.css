@@ -1,0 +1,22 @@
+.flexbox{
+    background-color: aquamarine;
+    font-size: 35px;
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+}
+
+.flexbox > div {
+    background-color: blanchedalmond;
+    margin: 5px;
+    padding: 15px;
+    width: 100px;
+}
+
+.flexbox > div:nth-child(5){
+    order: 1;
+}
